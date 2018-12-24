@@ -12,17 +12,17 @@ contacts = {"Joe Smith" => {}}
 # TODO: Use common array/dict methods 
 
 for name,info in contacts do
-	for i in 0...3 do
-		if i == 0
-			info[:email] = contact_data[i]
-		end
-		if i == 1
-			info[:address] = contact_data[i]
-		end
-		if i == 2
-			info[:phone_number] = contact_data[i]
-		end
-	end
+    for i in 0...3 do
+        if i == 0
+            info[:email] = contact_data[i]
+        end
+        if i == 1
+            info[:address] = contact_data[i]
+        end
+        if i == 2
+            info[:phone_number] = contact_data[i]
+        end
+    end
 end
 
 puts contacts

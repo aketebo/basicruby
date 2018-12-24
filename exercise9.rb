@@ -11,25 +11,25 @@ contacts = {"Joe Smith" => {}, "Sally Johnson" => {}}
 
 j = 0
 for contactInfo in contact_data do
-	contactDict = {}
-	for i in 0...3 do
-		if i == 0
-			contactDict[:email] = contactInfo[i] 
-		end
-		if i == 1
-			contactDict[:address] = contactInfo[i]
-		end
-		if i == 2
-			contactDict[:phone] = contactInfo[i]
-		end
-	end
-	if j == 0
-		contacts["Joe Smith"] = contactDict
-	end
-	if j == 1
-		contacts["Sally Johnson"] = contactDict	
-	end
-	j += 1
+    contactDict = {}
+    for i in 0...3 do
+        if i == 0
+            contactDict[:email] = contactInfo[i] 
+        end
+        if i == 1
+            contactDict[:address] = contactInfo[i]
+        end
+        if i == 2
+            contactDict[:phone] = contactInfo[i]
+        end
+    end
+    if j == 0
+        contacts["Joe Smith"] = contactDict
+    end
+    if j == 1
+        contacts["Sally Johnson"] = contactDict 
+    end
+    j += 1
 end
 
 puts contacts
